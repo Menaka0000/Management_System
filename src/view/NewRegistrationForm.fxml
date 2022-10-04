@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context1" prefHeight="627.0" prefWidth="602.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewRegistrationFormController">
+   <children>
+      <Label layoutX="25.0" prefHeight="46.0" prefWidth="183.0" style="-fx-font-family: &quot;Times New Roman&quot;;" text="New Registration">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="208.0" layoutY="25.0" prefHeight="0.0" prefWidth="361.0" />
+      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="25.0" layoutY="78.0" prefHeight="25.0" prefWidth="113.0" promptText="Student Id" />
+      <JFXTextField fx:id="txtFirstName" labelFloat="true" layoutX="25.0" layoutY="121.0" prefHeight="25.0" prefWidth="260.0" promptText="First Name" />
+      <JFXTextField fx:id="txtLastName" labelFloat="true" layoutX="318.0" layoutY="121.0" prefHeight="25.0" prefWidth="260.0" promptText="Last Name" />
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="25.0" layoutY="164.0" prefHeight="25.0" prefWidth="260.0" promptText="Address" />
+      <JFXTextField fx:id="txtAge" labelFloat="true" layoutX="25.0" layoutY="212.0" prefHeight="25.0" prefWidth="62.0" promptText="Age" />
+      <JFXTextField fx:id="txtDate" labelFloat="true" layoutX="25.0" layoutY="310.0" prefHeight="25.0" prefWidth="260.0" promptText="Date" />
+      <JFXTextField fx:id="txtTime" labelFloat="true" layoutX="318.0" layoutY="310.0" prefHeight="25.0" prefWidth="260.0" promptText="Time" />
+      <JFXComboBox fx:id="cmbProgramme" blendMode="DARKEN" layoutX="25.0" layoutY="365.0" prefHeight="25.0" prefWidth="260.0" promptText="Programme" />
+      <JFXComboBox fx:id="cmbGender" layoutX="127.0" layoutY="212.0" prefHeight="25.0" prefWidth="113.0" promptText="Gender" />
+      <JFXButton buttonType="RAISED" layoutX="348.0" layoutY="566.0" onAction="#cancelOnAction" prefHeight="34.0" prefWidth="100.0" ripplerFill="#8f9fcf" style="-fx-border-color: #34495e; -fx-border-radius: 5 10 5 10; -fx-border-width: 2; -fx-background-radius: 5 10 5 10; -fx-background-color: #2d3436;" text="Cancel" textFill="#a9b2b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="478.0" layoutY="566.0" onAction="#saveOnAction" prefHeight="34.0" prefWidth="100.0" ripplerFill="#8f9fcf" style="-fx-border-color: #34495e; -fx-border-radius: 5 10 5 10; -fx-border-width: 2; -fx-background-radius: 5 10 5 10; -fx-background-color: #2d3436;" text="Save" textFill="#a9b2b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

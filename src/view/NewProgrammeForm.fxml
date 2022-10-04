@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context2" prefHeight="627.0" prefWidth="602.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewProgrammeFormController">
+   <children>
+      <Label layoutX="35.0" prefHeight="46.0" prefWidth="183.0" style="-fx-font-family: &quot;Times New Roman&quot;;" text="New Programme">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="208.0" layoutY="25.0" prefHeight="0.0" prefWidth="361.0" />
+      <JFXButton buttonType="RAISED" layoutX="358.0" layoutY="576.0" onAction="#cancelOnAction" prefHeight="34.0" prefWidth="100.0" ripplerFill="#8f9fcf" style="-fx-border-color: #34495e; -fx-border-radius: 5 10 5 10; -fx-border-width: 2; -fx-background-radius: 5 10 5 10; -fx-background-color: #2d3436;" text="Cancel" textFill="#a9b2b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="488.0" layoutY="576.0" onAction="#saveOnAction" prefHeight="34.0" prefWidth="100.0" ripplerFill="#8f9fcf" style="-fx-border-color: #34495e; -fx-border-radius: 5 10 5 10; -fx-border-width: 2; -fx-background-radius: 5 10 5 10; -fx-background-color: #2d3436;" text="Save" textFill="#a9b2b5">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="35.0" layoutY="88.0" prefHeight="25.0" prefWidth="113.0" promptText="Id" />
+      <JFXTextField fx:id="txtProgrammeName" labelFloat="true" layoutX="35.0" layoutY="146.0" prefHeight="25.0" prefWidth="297.0" promptText="Programme Name" />
+      <JFXTextField fx:id="txtDuration" labelFloat="true" layoutX="35.0" layoutY="198.0" prefHeight="25.0" prefWidth="183.0" promptText="Duration" />
+      <JFXTextField fx:id="txtFee" labelFloat="true" layoutX="35.0" layoutY="252.0" prefHeight="25.0" prefWidth="183.0" promptText="Fee (LKR)" />
+   </children>
+</AnchorPane>
